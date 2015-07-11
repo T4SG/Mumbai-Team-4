@@ -7,15 +7,15 @@
 </head> 
 <body>
   <div id="map" style="width: 500px; height: 400px;"></div>
-  
+  <div id="map_canvas" style="height:300px;"></div>
   <script>
     // Define your locations: HTML content for the info window, latitude, longitude
     var locations = [
-      ['<h4>Bondi Beach</h4>', 27.700769, 85.300140],
-      ['<h4>Coogee Beach</h4>', 27.500769, 85.400140],
-      ['<h4>Cronulla Beach</h4>', 27.100769, 85.500140],
-      ['<h4>Manly Beach</h4>', 27.200769, 85.600140],
-      ['<h4>Maroubra Beach</h4>', 27.510769, 85.700140]
+      ['<h4>Lincoln School</h4>', 27.700769, 85.300140],
+      ['<h4>The British School</h4>', 27.500769, 85.400140],
+      ['<h4>Kathmandu International School</h4>', 27.100769, 85.500140],
+      ['<h4>Rosebud School</h4>', 27.200769, 85.600140],
+      ['<h4>Kathmandu Valley High School</h4>', 27.510769, 85.700140]
     ];
     
     // Setup the different icons and shadows
@@ -50,7 +50,8 @@
     });
 
     var infowindow = new google.maps.InfoWindow({
-      maxWidth: 160
+      maxWidth: 200,
+	  
     });
 
     var markers = new Array();
@@ -69,7 +70,7 @@
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
-          infowindow.setContent(locations[i][0]);
+          infowindow.setContent(locations[i][0] + "Current fund = Rs. 1000 "+"<br />"+"Required fund = Rs. 10000" );
           infowindow.open(map, marker);
         }
       })(marker, i));
@@ -95,3 +96,4 @@
   </script> 
 </body>
 </html>
+
