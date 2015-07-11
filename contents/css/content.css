@@ -1,0 +1,12 @@
+html,body {
+  font-family: "effra","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #37373b;
+}
+
+div {
+	border-top:5px;
+	border-color: #345;
+}
