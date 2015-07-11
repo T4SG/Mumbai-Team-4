@@ -19,8 +19,7 @@
     ];
     
     // Setup the different icons and shadows
-    //var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
-	var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
+    var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
     
     var icons = [
       iconURLPrefix + 'red-dot.png',
@@ -31,11 +30,16 @@
       iconURLPrefix + 'pink-dot.png',      
       iconURLPrefix + 'yellow-dot.png'
     ]
+	var icon = {
+    url: 'images/marker.png', // url
+    scaledSize: new google.maps.Size(40, 40), // scaled size
+   
+};
     var iconsLength = icons.length;
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
-      center: new google.maps.LatLng(-37.92, 151.24),
+      center: new google.maps.LatLng(-37.92, 151.25),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       mapTypeControl: false,
       streetViewControl: false,
@@ -58,8 +62,7 @@
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
-        icon: icons[iconCounter], animation:google.maps.Animation.BOUNCE
-		
+        icon: icon, animation:google.maps.Animation.BOUNCE
       });
 
       markers.push(marker);
