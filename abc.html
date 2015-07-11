@@ -11,11 +11,11 @@
   <script>
     // Define your locations: HTML content for the info window, latitude, longitude
     var locations = [
-      ['<h4>Bondi Beach</h4>', -33.890542, 151.274856],
-      ['<h4>Coogee Beach</h4>', -33.923036, 151.259052],
-      ['<h4>Cronulla Beach</h4>', -34.028249, 151.157507],
-      ['<h4>Manly Beach</h4>', -33.80010128657071, 151.28747820854187],
-      ['<h4>Maroubra Beach</h4>', -33.950198, 151.259302]
+      ['<h4>Bondi Beach</h4>', 27.700769, 85.300140],
+      ['<h4>Coogee Beach</h4>', 27.500769, 85.400140],
+      ['<h4>Cronulla Beach</h4>', 27.100769, 85.500140],
+      ['<h4>Manly Beach</h4>', 27.200769, 85.600140],
+      ['<h4>Maroubra Beach</h4>', 27.510769, 85.700140]
     ];
     
     // Setup the different icons and shadows
@@ -32,14 +32,14 @@
     ]
 	var icon = {
     url: 'images/marker.png', // url
-    scaledSize: new google.maps.Size(40, 40), // scaled size
+    scaledSize: new google.maps.Size(30, 30), // scaled size
    
 };
     var iconsLength = icons.length;
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
-      center: new google.maps.LatLng(-37.92, 151.25),
+      center: new google.maps.LatLng(27.7000, 85.3333),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       mapTypeControl: false,
       streetViewControl: false,
