@@ -202,17 +202,17 @@ h5 {
 	color: #999;
 }
 
-ul, ol {
-	margin: 0 0 35px 35px;
+aside ul, ol {
+	margin: 0 0 10px 35px;
 	padding: 0;
 	list-style: disc;
 }
 
-li {
+aside li {
 	padding-bottom: 10px;
 }
 
-li ol, li ul {
+aside li ol, aside li ul {
 	font-size: 1.0em;
 	margin-bottom: 0;
 	padding-top: 2px;
