@@ -154,8 +154,8 @@ html,body {
 /*---- services ----*/
 .services{
 	background:#42B8DD;
-	padding: 2em 0 4em 0; 
-	height: auto;
+	padding: 0em 0 1em 0; 
+	height: 350px;
 }
 .services-hedding h3{
 	font-size: 67px;
