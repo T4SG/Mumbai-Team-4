@@ -1,16 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
-
-body {
-	background: #ddd;
-	
-	background-repeat: no-repeat;
-	margin:0;
-	padding:0;
-	font-family: 'Source Sans Pro', 'sans-serif';
-	font-size: 1.2em;
-	color: #888;
-	font-weight: 300;
-}
 
 * {
 	margin:0;
@@ -64,7 +51,7 @@ p {
 	line-height: 1.7em;
 	margin-bottom: 25px;
 }
-
+/*
 a {
 	color: #D5484F;
 	border-bottom: 1px solid #D5484F;
@@ -80,7 +67,7 @@ a:focus {
 	outline: none;
 }
 
-
+*/
 a.button { background: none repeat scroll 0% 0% #D5484F;
 color: #FFF;
 display: inline-block;
@@ -228,7 +215,7 @@ li {
 li ol, li ul {
 	font-size: 1.0em;
 	margin-bottom: 0;
-	padding-top: 5px;
+	padding-top: 2px;
 }
 
 
