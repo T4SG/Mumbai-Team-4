@@ -19,7 +19,8 @@
     ];
     
     // Setup the different icons and shadows
-    var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
+    //var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
+	var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
     
     var icons = [
       iconURLPrefix + 'red-dot.png',
@@ -57,7 +58,8 @@
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
-        icon: icons[iconCounter]
+        icon: icons[iconCounter], animation:google.maps.Animation.BOUNCE
+		
       });
 
       markers.push(marker);
