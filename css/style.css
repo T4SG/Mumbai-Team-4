@@ -10,7 +10,7 @@ html,body {
 }
 /*---- heder ----*/
 .heder{
-	background:#000;
+	background:#42B8DD;
 }
 .container{
 	width:85%;
@@ -20,7 +20,7 @@ html,body {
 	float:left;
 }
 .heder-logo h1 {
-	margin: 20px 0;
+	margin: 10px 0;
 }
 .heder-logo h1 a{
 	font-size:25px;
@@ -29,9 +29,67 @@ html,body {
 	color:#FFF;
 	text-decoration: none;
 }
+
+
+ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 10px 4px 10px 0;
+  list-style: none;
+  }
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 10px 10px;
+  color:#fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  
+  color: #67A;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 150px;
+  z-index: 234;
+  
+  background-color:#42B8DD;
+  color:#42B8DD;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+     
+  color: #000;
+  
+  
+  
+}
+ul li ul li:hover { color: #67A}
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
 .top-nav {
 	float: left;
-	margin: .5em 0 0 8em;
+	margin: .5em 0 0 1em;
 }
 .top-nav ul {
 	margin: 1.7em 0 0 0;
@@ -48,7 +106,7 @@ html,body {
 	text-decoration: none;
 }
 .top-nav ul li a:hover{
-	color:#42B8DD;
+	color:#67A;
 	transition:.5s all;
 	-webkit-transition:.5s all;
 	-moz-transition:.5s all;
@@ -56,10 +114,10 @@ html,body {
 	-ms-transition:.5s all;
 }
 .top-nav ul li a.Signup {
-	color: #42B8DD;
+	color: #FFF;
 	margin-left: 33em;
 	padding: 0.5em 1em;
-	border: #42B8DD solid 2px;
+	border: #FFF solid 2px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -67,8 +125,8 @@ html,body {
 	-ms-border-radius: 10px;
 }
 .top-nav ul li a.Signup:hover{
-	border: #FFF solid 2px;
-	color: #FFF;
+	border: #67A solid 2px;
+	color: #67A;
 	text-decoration:none;
 	transition:.5s all;
 	-webkit-transition:.5s all;
@@ -78,17 +136,17 @@ html,body {
 }
 
 .top-nav ul li a.Login {
-	color: #42B8DD;
+	color: #FFF;
 	margin-left: 66em;
 	padding: 0.5em 1em;
-	border: #42B8DD solid 2px;
+	border: #FFF solid 2px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 }
 .top-nav ul li a.Login:hover {
-	border: #FFF solid 2px;
-	color: #FFF;
+	border: #67A solid 2px;
+	color: #67A;
 	text-decoration:none;
 	transition:.5s all;
 	-webkit-transition:.5s all;
