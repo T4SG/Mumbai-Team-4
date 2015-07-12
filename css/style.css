@@ -87,6 +87,10 @@ ul li:hover ul {
   opacity: 1;
   visibility: visible;
 }
+
+#two{
+	width: 100%;
+}
 .top-nav {
 	float: left;
 	margin: .5em 0 0 1em;

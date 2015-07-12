@@ -68,36 +68,35 @@
 			<div class="container">
 				<div class="header-top">
 					<div class="heder-logo">
-
-						<h1><a href="#" style="margin-left:0px">HHF</a></h1>
-
-
+						<h3><a href="#" style="margin:0px; color:#FFF;"></a>HHF</h3>
 					</div>
 					<div class="top-nav">
 					<span class="menu"><img src="images/menu.png" alt=""></span>
-						<ul class="" id="primary_nav_wrap">
+						<ul class="nav1">
 							<li><a class="scroll" href="#home">Home</a></li>
-
-							<li><a class="scroll" href="#services">Services</a></li>
-							<li><a class="scroll" href="#portfolio">Portfolio</a></li>
-							<li><a class="scroll" href="#about">About</a></li>
-							<li><a class="scroll" href="#contact">Contact</a></li>
-							<li><a>Partnership</a>
+							<li><a class="scroll" href="#services">Our Initiatives</a></li>
+							<li><a class="scroll" href="#portfolio">Our Work</a></li>
+							<li><a class="scroll" href="#top">About Us</a></li>
+							<li><a class="scroll" href="#team">The Team</a></li>
+							<li ><a>Partner</a> 
 								<ul>
-								<li><a href="volunteer.html">School</a></li>
-								  <li><a href="#">Individual</a></li>								  
-								  <li><a href="#">Group</a></li>
+								<li><a href="volunteer.html"></a>School</li>
+								<li><a href="#">Individual</a></li>
+								<li><a href="#">Group</a></li>
 								</ul>
-							  </li>
-							
-
 
 							<li><a class="Login play-icon popup-with-zoom-anim" style="margin-left:180px;" href="#small-dialog6">Login</a></li>
 							<li><a class="Signup play-icon popup-with-zoom-anim" style="margin-left:10px;" href="#small-dialog2">Sign up</a></li>
-												</ul>
-	
+							
+						</ul>
 						<!-- script-for-menu -->
-							 
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
 						<!-- /script-for-menu -->
 					</div>
 					<div class="clearfix"> </div>
@@ -173,7 +172,7 @@
 	    <article>
 				
 			
-			<h2>NEPAL EARTHQUAKE</h2>
+			<h2>Introduction to hallux</h2>
 			<div class="article-info">Posted on <time datetime="2013-05-14">14 May</time> by <a href="#" rel="author">Joe Bloggs</a></div>
 
             <p>	The April 2015 Nepal earthquake (also known as the Gorkha earthquake) killed more than 9,000 people and injured more than 23,000. It occurred at 11:56 NST on 25 April, with a magnitude of 7.8Mw[1] or 8.1Ms[2] and a maximum Mercalli Intensity of IX (Violent). Its epicenter was east of the district of Lamjung, and its hypocenter was at a depth of approximately 15 km (9.3 mi). It was the worst natural disaster to strike Nepal since the 1934 Nepal–Bihar earthquake.</p>
@@ -220,32 +219,24 @@
         <aside class="sidebar big-sidebar right-sidebar">
 	
 	
-            <ul>               
+            <ul id="two">               
                 <li>
-					<h4>News</h4>
-					<ul class="newslist">
-						<li>
-							<p><span class="newslist-date">Jul 21</span>
-									   Quisque hendrerit lorem sit amet dui viverra dictum. Phasellus imperdiet magna sit amet arcu tristique ultricies ut in dui.</p>
-						</li>
+					<h4>Tweets</h4>		
 
-						<li>
-							<p><span class="newslist-date">May 09</span>
-									   Mauris et felis semper, congue dui ac, iaculis ipsum. Fusce non rhoncus risus, quis luctus nisl. Donec vitae velit tincidunt, tincidunt felis eu, suscipit nibh. </p>
-		 
-						</li>
-					</ul>
+					<iframe src="tweetref.html"></iframe>		
+                                                         <!--  <a class="twitter-timeline"  href="https://twitter.com/iyersitalaxmi/lists/members1" data-widget-id="620041590988500993">Tweets from https://twitter.com/iyersitalaxmi/lists/members1</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+          
+          
+          
+          
+          
+          
+
                 </li>
 	
    		<li>
-                    <h4>Maecenas varius</h4>
-                    <ul>
-				<li><a href="#">Nam cursus nisi nec viverra iaculis</a></li>
-				<li><a href="#">Integer lacinia risus id nibh vestibulum</a></li>
-				<li><a href="#">Mauris eget ante ut elit rutrum ornare </a></li>
-				<li><a href="#">Vivamus quis orci et suscipit consequa</a></li>
-				<li><a href="#">Nam eget tellus adipiscin hendrerit</a></li>
-			</ul>
+                    
                
 
 	   </li>
@@ -349,7 +340,7 @@
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
 							<a href="#small-dialog" class="b-link-stripe b-animate-go">
-						     <img src="images/dvish.jpg" width="100%" height="100%" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
+						     <img src="images/dvish.jpg" width="180%" height="150%" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
 							 <p class="b-animate b-from-left    b-delay03 ">designed by Authour | May 23, 2014</p>
 						  	</div></a>
 		                </div>
@@ -550,8 +541,136 @@
 			</div>
 			<!-- container -->
 		</div>
-
-			<div class="col-md-3">
+		<!-- team -->
+		<!-- team-bottom -->
+		<div class="team-bottom">
+			<!-- container -->
+			<div class="container">
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span> </span>
+					<p>2009</p>
+					<p class="text">PERSPICIATIS</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span class="comments"> </span>
+					<p>13,562</p>
+					<p class="text">COMMENTS</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span class="cups"> </span>
+					<p>8,710</p>
+					<p class="text">COFFEE CUPS</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span class="awards"> </span>
+					<p>715</p>
+					<p class="text">AWARDS</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- team-bottom -->
+		<!-- skills -->
+		<div id="about" class="skills">
+			<!-- container -->
+			<div class="container">
+				<div class="skills-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Our skills.</h3>
+				</div>
+				<div class="col-md-9">
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-1"></div>
+					</div>
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-2"></div>
+					</div>
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-3"></div>
+					</div>
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-4"></div>
+					</div>
+					<div class="clearfix"> </div>
+					<!-->
+				 <script type="text/javascript" src="js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#FFFFFF', '#42B8DD'], ['#FFFFFF', '#42B8DD'], ['#FFFFFF', '#42B8DD'], ['#FFFFFF', '#42B8DD']
+									];
+								for (var i = 1; i <= 5; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 40 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 10,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+				<!--/-->
+					<div class="skills-grid-text">
+						<h5 class="plus wow fadeInRight">Something about our skills</h5>
+						<p class="wow bounceIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							Excepteur sint occaecat cupidatat non proident.
+						</p>
+						<p class="wow bounceIn" data-wow-delay="0.4s">	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+							dicta.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="totam">
+						<div class="tab1 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li><span> </span></li>
+								<li class="text">Totam rem aperiam eaque</li>
+								<li class="minus">-</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab2 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="lock"></li>
+								<li class="sub-text">Nemo enim ipsam voluptatem</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab3 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="tower"></li>
+								<li class="sub-text">Ut enim ad minima veniam</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab4 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="phone"></li>
+								<li class="sub-text">Quis nostrum exercitationem ullam</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab5 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="book"></li>
+								<li class="sub-text">Neque porro quisquam est qui</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
 					</div>
 					
 						<script>
@@ -606,13 +725,46 @@
 			</div>
 			<!-- container -->
 		</div>
-
-		<!-- footer -->
-		<div class="footer">
+		<!-- skills -->
+		<!-- skills-middle -->
+		<div class="skills-middle">
 			<!-- container -->
 			<div class="container">
-				<h4>Happy Hearts Fund</h4>
-					<p class="wow bounceIn" data-wow-delay="0.4s" style="color:white">123A Building, Road Street, Orlando District, US
+				<div class="skills-middle-text">
+					<form>
+						<input type="text" class="text plus wow fadeInLeft" value="Enter your e-mail here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your e-mail here...';}">
+						<input type="submit" class="text plus wow fadeInRight" value="Subscribe">
+					</form>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- skills-middle -->
+		<!-- skills-bottom -->
+		<div class="skills-bottom">
+			<!-- container -->
+			<div class="container">
+				<div class="skills-images wow bounceIn" data-wow-delay="0.4s">
+					<div class="envato"><img src="images/envato.png" alt="" /></div>
+					<div class="envato"><img src="images/word.png" alt="" /></div>
+					<div class="envato"><img src="images/dribble.png" alt="" /></div>
+					<div class="envato"><img src="images/envato.png" alt="" /></div>
+					<div class="envato"><img src="images/word.png" alt="" /></div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- skills-bottom -->
+		<!-- contact -->
+		<div id="contact" class="contact">
+			<!-- container -->
+			<div class="container">
+				<div class="contact-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Contact us.</h3>
+				</div>
+				<p class="wow bounceIn" data-wow-delay="0.4s">123A Building, Road Street, Orlando District, US
 					<span>+01 234 567 89 - +01 234 567 89 | contact@book.com</span>
 				</p>
 				<div class="social-icons wow bounceIn" data-wow-delay="0.4s">
@@ -624,12 +776,52 @@
 						<li class="rect"></li>
 						<li class="youtube"></li>
 						<li class="skip"></li>
+						<li class="dribbble"></li>
 					</ul>
 				</div>
-				
+				<div class="col-md-8 text-fields">
+					<div class="text-fields-left">
+						<div class="text-field-email">
+							<form>
+								<input type="text" class="text" value="EMAIL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL';}">
+							</form>
+							<div class="msg-img"></div>
+						</div>
+						<div class="text-field-name">
+							<form>
+								<input type="text" class="text" value="NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME';}">
+							</form>
+							<div class="user-img"></div>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="text-field-area wow fadeInLeft">
+							<form>
+								<textarea value="MESSAGE:" onfocus="if(this.value == 'MESSAGE') this.value='';" onblur="if(this.value == '') this.value='MESSAGE';">MESSAGE</textarea>
+							</form>
+							<div class="pen-img"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-fields">
+					<div class="text-fields-right wow fadeInRight">
+						<form>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- contact -->
+		<!-- footer -->
+		<div class="footer">
+			<!-- container -->
+			<div class="container">
+				<h4>IDDO</h4>
 				<div class="copyright">
-					<p style="color:white">
-						Give Smart.Give Sustainably.
+					<p>
+						Template by <a href="http://w3layouts.com/">W3layouts.com</a>
 					</p>
 				</div>
 				<a class="scroll" href="#home"><img src="images/up-arrow.png" alt="" /></a>
